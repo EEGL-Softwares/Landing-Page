@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -8,6 +8,16 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+
+
+export class AppComponent implements OnInit {
   title = 'particle-test';
+  ngOnInit(): void {
+    particlesJS.load('particles-js', '../assets/particles.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+  }
 }
+
+declare var particlesJS: any;
+
