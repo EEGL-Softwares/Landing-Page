@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+.marquee {
+  rotate: 270deg;
+  --gap: 0.5rem;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  list-style-type: none;
+  width: 100vw;
+}
+
+.marquee__content {
+  padding: 0;
+  margin: 0;
+  font-size: 40pt;
+  flex-shrink: 0;
+  display: flex;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 25s linear infinite;
+  list-style-type: none;
+  font-family: Inter;
+  .textoComStroke {
+    text-shadow: #ffffff 0px 0px 1px, #ffffff 0px 0px 1px, #ffffff 0px 0px 1px,
+      #ffffff 0px 0px 1px, #ffffff 0px 0px 1px, #ffffff 0px 0px 1px;
+  }
+  .textoSemStroke {
+    color: white  ;
+  }
+}
+
+.marquee1 {
+  top: 10%;
+  position: fixed;
+  left: 40%;
+}
+
+#marquee2 {
+  top: 10%;
+  position: fixed;
+  left: 42.5%;
+  rotate: 180;
+  .marquee {
+    rotate: 90deg;
+  }
+}
+
+#marquee3 {
+  position: fixed;
+  left: 45%;
+  rotate: 180;
+}
+#marquee4 {
+  position: fixed;
+  left: 47.5%;
+  rotate: 180deg;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
