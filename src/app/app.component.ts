@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   title = 'particle-test';
   ngOnInit(): void {
     particlesJS.load('particles-js', '../assets/particles.json', function () {
-      console.log('callback - particles.js config loaded');
+      //done
     });
   }
 }
