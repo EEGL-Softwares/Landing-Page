@@ -1,7 +1,11 @@
 {
   "particles": {
     "number": {
+<<<<<<< HEAD
       "value": 200,
+=======
+      "value": 120,
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
       "density": {
         "enable": true,
         "value_area": 1000

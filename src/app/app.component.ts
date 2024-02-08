@@ -13,8 +13,13 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent implements OnInit {
   title = 'particle-test';
   ngOnInit(): void {
+<<<<<<< HEAD
     particlesJS.load('particles-js', '../assets/particles.json', {
       
+=======
+    particlesJS.load('particles-js', '../assets/particles.json', function () {
+      //done
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
     });
   }
 }

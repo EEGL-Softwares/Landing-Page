@@ -55,7 +55,11 @@ var pJS = function(tag_id, params){
         }
       },
       size: {
+<<<<<<< HEAD
         value: 1,
+=======
+        value: 20,
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
         random: false,
         anim: {
           enable: false,
@@ -66,7 +70,11 @@ var pJS = function(tag_id, params){
       },
       line_linked: {
         enable: true,
+<<<<<<< HEAD
         distance: 30,
+=======
+        distance: 100,
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
         color: '#fff',
         opacity: 1,
         width: 1

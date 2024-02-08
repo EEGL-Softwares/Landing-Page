@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
+<<<<<<< HEAD
 header {
   width: 87vw;
   height: 15vh;
@@ -36,6 +37,8 @@ header {
   }
 }
 
+=======
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
 .marquee {
   rotate: 270deg;
   --gap: 0.5rem;
@@ -58,14 +61,22 @@ header {
   animation: scroll 25s linear infinite;
   list-style-type: none;
   font-family: Inter;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
   .textoComStroke {
     text-shadow: #ffffff 0px 0px 1px, #ffffff 0px 0px 1px, #ffffff 0px 0px 1px,
       #ffffff 0px 0px 1px, #ffffff 0px 0px 1px, #ffffff 0px 0px 1px;
   }
+<<<<<<< HEAD
 
   .textoSemStroke {
     color: white;
+=======
+  .textoSemStroke {
+    color: white  ;
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
   }
 }
 
@@ -80,7 +91,10 @@ header {
   position: fixed;
   left: 42.5%;
   rotate: 180;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
   .marquee {
     rotate: 90deg;
   }
@@ -91,7 +105,10 @@ header {
   left: 45%;
   rotate: 180;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
 #marquee4 {
   position: fixed;
   left: 47.5%;
@@ -102,12 +119,16 @@ header {
   from {
     transform: translateX(0);
   }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
   to {
     transform: translateX(calc(-100% - var(--gap)));
   }
 }
 
+<<<<<<< HEAD
 @media (max-width: 1450px) {
 
   .marquee1 {
@@ -176,3 +197,5 @@ header {
     display: none;
   }
 }
+=======
+>>>>>>> 2b1e6988abcbaf58144f1b73660c101fbe8f4916
