@@ -1,5 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
+header {
+  width: 87vw;
+  height: 15vh;
+  border-bottom: 2px solid white;
+  position: absolute;
+  top: 0;
+  display: flex;
+
+  #logo {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  li {
+    list-style: none;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter;
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+
 .marquee {
   rotate: 270deg;
   --gap: 0.5rem;
@@ -22,12 +58,14 @@
   animation: scroll 25s linear infinite;
   list-style-type: none;
   font-family: Inter;
+
   .textoComStroke {
     text-shadow: #ffffff 0px 0px 1px, #ffffff 0px 0px 1px, #ffffff 0px 0px 1px,
       #ffffff 0px 0px 1px, #ffffff 0px 0px 1px, #ffffff 0px 0px 1px;
   }
+
   .textoSemStroke {
-    color: white  ;
+    color: white;
   }
 }
 
@@ -42,6 +80,7 @@
   position: fixed;
   left: 42.5%;
   rotate: 180;
+
   .marquee {
     rotate: 90deg;
   }
@@ -52,6 +91,7 @@
   left: 45%;
   rotate: 180;
 }
+
 #marquee4 {
   position: fixed;
   left: 47.5%;
@@ -62,8 +102,77 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(calc(-100% - var(--gap)));
   }
 }
 
+@media (max-width: 1450px) {
+
+  .marquee1 {
+    left: 39%;
+  }
+
+  #marquee2 {
+    left: 42%;
+  }
+
+  #marquee3 {
+    left: 45%;
+  }
+
+  #marquee4 {
+    left: 48%;
+  }
+}
+
+@media (max-width: 1050px) {
+
+  .marquee1 {
+    left: 39.5vw;
+  }
+
+  #marquee2 {
+    left: 43.5vw;
+  }
+
+  #marquee3 {
+    left: 47.5vw;
+  }
+
+  #marquee4 {
+    left: 51.5%;
+  }
+}
+
+@media (max-width: 900px) {
+
+  header {
+    width: 88vw;
+    #logo {
+      width: 20%;
+    }
+    li {
+      width: 25%;
+    }
+  }
+
+  .marquee1 {
+    top: 25%;
+    left: 41.5vw;
+  }
+
+  #marquee2 {
+    top: 25%;
+    left: 47vw;
+  }
+
+  #marquee3 {
+    display: none;
+  }
+
+  #marquee4 {
+    display: none;
+  }
+}
